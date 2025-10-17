@@ -1,0 +1,38 @@
+# Ignoruj foldery kompilacji
+/Debug/
+/Release/
+/build/
+/*.dep
+
+# Ignoruj automatycznie generowane pliki Atmel/Microchip Studio
+*.atsuo
+*.bak
+*.log
+*.aps
+*.tmp
+*.d
+*.obj
+*.elf
+*.eep
+*.hex
+*.lss
+*.a
+
+# Ignoruj pliki użytkownika i ustawienia środowiska
+*.user
+*.suo
+*.ncb
+*.VC.db
+*.VC.opendb
+
+# Ignoruj pliki Makefile wygenerowane przez IDE
+Makefile
+Makefile.in
+
+# Ignoruj foldery systemowe Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignoruj folder Git’a samego siebie (zawsze)
+.git/
