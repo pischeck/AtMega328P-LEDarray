@@ -5,14 +5,22 @@
  * Author : piszc
  */ 
 
+#define F_CPU 1000000UL
 #include <avr/io.h>
+#include <util/delay.h>
 
 
 int main(void)
 {
-    /* Replace with your application code */
-    while (1) 
+	DDRD = 0xFF;
+	uint8_t licznik = 0x03;
+    
+	while (1) 
     {
+		PORTD = licznik;
+		_delay_ms(1000);
+		licznik = licznik << 1;
+		if(licznik == 0x80) licznik = 0x03;
     }
 }
 
